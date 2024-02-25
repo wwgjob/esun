@@ -6,6 +6,8 @@ import com.ntust.application.dao.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @RequiredArgsConstructor
 public class MemberWorker {
@@ -13,6 +15,10 @@ public class MemberWorker {
 
     public void deleteMember(Long id) {
         memberRepository.deleteById(id);
+    }
+
+    public List<MemberDo> search(String name, String email) {
+        return memberRepository.findAllByUserNameContainingOrUserEmailContaining(name, email);
     }
 
     public MemberDo updateMember(UpdateMemberDio input) {
