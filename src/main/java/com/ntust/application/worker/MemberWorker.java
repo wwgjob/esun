@@ -6,6 +6,7 @@ import com.ntust.application.dao.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Component
@@ -13,6 +14,7 @@ import java.util.List;
 public class MemberWorker {
     private final MemberRepository memberRepository;
 
+    @Transactional
     public void deleteMember(Long id) {
         memberRepository.deleteById(id);
     }
