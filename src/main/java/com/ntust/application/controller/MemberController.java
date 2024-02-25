@@ -1,13 +1,11 @@
 package com.ntust.application.controller;
 
 import com.ntust.application.controller.dio.CreateMemberDio;
+import com.ntust.application.controller.dio.SearchMemberListDio;
 import com.ntust.application.controller.dio.UpdateMemberDio;
 import com.ntust.application.controller.dto.GetMemberDto;
-import com.ntust.application.dao.entity.MemberDo;
-import com.ntust.application.service.member.CreateMemberService;
-import com.ntust.application.service.member.DeleteMemberService;
-import com.ntust.application.service.member.GetMemberService;
-import com.ntust.application.service.member.UpdateMemberService;
+import com.ntust.application.controller.dto.SearchMemberListDto;
+import com.ntust.application.service.member.*;
 import com.ntust.application.worker.MemberWorker;
 import com.ntust.base.service.dto.ResponseDto;
 import io.swagger.annotations.Api;
@@ -22,6 +20,17 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class MemberController {
     private final MemberWorker memberWorker;
+
+    private final SearchMemberListService SearchMemberListService;
+
+    @ApiOperation(value="get member data")
+    @GetMapping("/search")
+    public ResponseDto<SearchMemberListDto> searchMember(@RequestParam(name="keyword", required = false, defaultValue = "") String keyword) {
+        SearchMemberListDio input = new SearchMemberListDio();
+        input.setKeyword(keyword);
+
+        return SearchMemberListService.request(input);
+    }
 
     private final GetMemberService getMemberService;
 
