@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: NTUST
+  datasource:
+    url: jdbc:postgresql://localhost:5432/your_database_name
+    username: your_username
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+swagger:
+  enabled: true # 是否启用Swagger，默认为true
+  title: Your API Title # API文档的标题
+  description: Your API Description # API文档的描述
+  version: 1.0 # API版本
