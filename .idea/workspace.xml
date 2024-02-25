@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f2b74e4-a700-4122-84ff-3589492711a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/configuration/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/configuration/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/dao/entity/MemberDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/dao/entity/MemberDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/dao/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/dao/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/TestWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/TestWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/UserWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/MemberWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/actions/TestActionWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ntust/application/worker/actions/TestActionWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ntust/application/worker/TestWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ntust/application/worker/TestWorkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ntust/application/worker/UserWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ntust/application/worker/MemberWorkerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +80,9 @@
       <recent name="C:\project\test-api\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ntust.application.service.member" />
+      <recent name="com.ntust.application.controller.dio" />
+      <recent name="com.ntust.application.controller.dto" />
       <recent name="com.ntust.application.worker" />
     </key>
   </component>
@@ -78,6 +96,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberWorkerTest.testTestWorker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ntust.application.worker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ntust.application.worker" />
+      <option name="MAIN_CLASS_NAME" value="com.ntust.application.worker.MemberWorkerTest" />
+      <option name="METHOD_NAME" value="testTestWorker" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,22 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserWorkerTest.testTestWorker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ntust.application.worker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ntust.application.worker" />
-      <option name="MAIN_CLASS_NAME" value="com.ntust.application.worker.UserWorkerTest" />
-      <option name="METHOD_NAME" value="testTestWorker" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="test-api" />
       <method v="2">
@@ -146,7 +164,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.UserWorkerTest.testTestWorker" />
+        <item itemvalue="JUnit.MemberWorkerTest.testTestWorker" />
         <item itemvalue="JUnit.TestWorkerTest" />
         <item itemvalue="JUnit.TestWorkerTest.testTestWorker" />
       </list>
@@ -181,12 +199,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ntust/application/controller/MemberController.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ntust/application/controller/MemberController.java</url>
-          <line>20</line>
+          <line>32</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
